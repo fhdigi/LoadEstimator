@@ -1,4 +1,5 @@
 ﻿using SQLite;
+using VilterLoadCalculator.Models;
 
 namespace VilterLoadCalculator.Data
 {
@@ -9,7 +10,7 @@ namespace VilterLoadCalculator.Data
         public static void CreateProgramTables()
         {
             var db = new SQLiteConnection(DataBaseNameAndPath);
-            //db.CreateTable<ClientInformation>();
+            db.CreateTable<BlastFreezingLoadEstimates>();
         }
     }
 

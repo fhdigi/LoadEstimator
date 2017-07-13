@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SQLite;
+using VilterLoadCalculator.Data;
 
 namespace VilterLoadCalculator.Models
 {
-    class BlastFreezingLoadEstimates
+    class BlastFreezingLoadEstimates : DatabaseService<BlastFreezingLoadEstimates>
     {
         public string Product { get; set; }
         public int Amount { get; set; }
@@ -18,11 +19,5 @@ namespace VilterLoadCalculator.Models
         public int ProductTempLeaving { get; set; }
         public int HeatRemoved { get; set; }
         public string EstimatedTimeHeatRemoval { get; set; }
-
-
-
-
-
-
     }
 }
