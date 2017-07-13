@@ -26,7 +26,7 @@
                     </Grid.RowDefinitions>
 
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition/>
+                        <ColumnDefinition Width="50"/>
                         <ColumnDefinition/>
                         <ColumnDefinition Width="30"/>
                         <ColumnDefinition/>
@@ -37,46 +37,85 @@
                            Content="Fluid" 
                            HorizontalAlignment="Right" />
 
-                    <ComboBox Grid.Row="0" Grid.Column="1" />
+                    <ComboBox Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Margin="0.2,0,30,0.4" />
 
-                    <Label Grid.Row="1" Grid.Column="0"
+                    <Label Grid.Row="2" Grid.Column="0"
                            Content="Flow" 
                            HorizontalAlignment="Right" />
 
-                    <TextBox Grid.Row="1" Grid.Column="1"
-                             HorizontalAlignment="Left"/>
+                    <TextBox Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="2"
+                             HorizontalAlignment="Left" TextChanged="TextBox_TextChanged" Width="139"/>
 
                     <Label Grid.Row="0" Grid.Column="3" 
                            Content="Temperature to Maintain" />
 
                     <TextBox Grid.Row="0" Grid.Column="4"
-                             HorizontalAlignment="Left"/>
+                             HorizontalAlignment="Left" Margin="0.2,0,0,0.4" Width="117"/>
 
-                    <Label Grid.Row="1" Grid.Column="3"  
+                    <Label Grid.Row="2" Grid.Column="3"  
                            Content="Enviroment Temperature"/>
 
-                    <TextBox Grid.Row="1" Grid.Column="4"
-                             HorizontalAlignment="Left"/>
+                    <TextBox Grid.Column="4" Grid.Row="1"
+                             HorizontalAlignment="Left" Margin="0.2,30,0,35.8" Grid.RowSpan="3" Width="117"/>
 
-                    <Button Grid.Row="3" Grid.Column="0" 
+                    <Button Grid.Row="4" Grid.Column="1" Margin="3" 
                             Content="Calculate"/>
 
-                    <Label Content="Room Load" HorizontalAlignment="Left" Margin="31.6,13.8,0,0" Grid.Row="6" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Column="1" Grid.RowSpan="2"/>
+                    <Label Content="Room Load" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Left"/>
 
-                    <TextBox Grid.ColumnSpan="3" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="0.2,12.8,0,0" Grid.Row="6" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
+                    <TextBox Grid.ColumnSpan="1" Grid.Column="1" HorizontalAlignment="Right" Height="23"  Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Top" Width="117" Margin="0.2,35.6,0,0" Grid.RowSpan="1"/>
 
-                    <Label Content="Tons" Grid.Column="4" HorizontalAlignment="Left" Margin="0.4,17.8,0,0" Grid.Row="6" VerticalAlignment="Top" Grid.RowSpan="2"/>
+                    <Label Content="Tons" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="6" VerticalAlignment="Top" Grid.RowSpan="2"/>
 
                 </Grid>
-                
+
             </TabItem>
-            
+
             <TabItem Header="Process Load">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+
+
+
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+
+
+
+
+                    </Grid.RowDefinitions>
+
+                    <ComboBox Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3" />
+
+                    <Label Content="Product" Grid.Column="2" Grid.Row="1"/>
+
+
+
+
+
+                </Grid>
+
+
             </TabItem>
-            
+
         </TabControl>
 
     </Grid>
-    
+
 </Window>
