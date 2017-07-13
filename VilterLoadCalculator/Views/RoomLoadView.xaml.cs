@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace VilterLoadCalculator
+namespace VilterLoadCalculator.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
