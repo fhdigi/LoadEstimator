@@ -63,6 +63,7 @@
     <Compile Include="Data\DatabaseService.cs" />
     <Compile Include="Data\DataExtender.cs" />
     <Compile Include="Data\SQLite.cs" />
+    <Compile Include="Models\BlastFreezingLoadEstimates.cs" />
     <Compile Include="ViewModels\RoomLoadViewModel.cs" />
     <Page Include="Views\RoomLoadView.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -107,9 +108,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="FodyWeavers.xml" />
   </ItemGroup>
