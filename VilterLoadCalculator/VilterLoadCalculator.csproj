@@ -65,6 +65,9 @@
     <Compile Include="Data\SQLite.cs" />
     <Compile Include="Models\BlastFreezingLoadEstimates.cs" />
     <Compile Include="ViewModels\RoomLoadViewModel.cs" />
+    <Compile Include="Views\LoadEstimateForm.xaml.cs">
+      <DependentUpon>LoadEstimateForm.xaml</DependentUpon>
+    </Compile>
     <Page Include="Views\RoomLoadView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -77,6 +80,10 @@
       <DependentUpon>RoomLoadView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\LoadEstimateForm.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -106,7 +113,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="sqlite3.dll">

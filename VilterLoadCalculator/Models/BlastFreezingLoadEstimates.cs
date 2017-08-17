@@ -19,5 +19,18 @@ namespace VilterLoadCalculator.Models
         public int ProductTempLeaving { get; set; }
         public int HeatRemoved { get; set; }
         public string EstimatedTimeHeatRemoval { get; set; }
+
+        private void GetProperty()
+
+        {
+
+        }
+        
+
     }
+
+    
+
+
 }
+
